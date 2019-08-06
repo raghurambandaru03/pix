@@ -1,0 +1,131 @@
+<div id="wrapper">
+  <!-- header of the page -->
+  <header class="top_bar signup-header" id="header">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 p-0">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light_1" style="float:right;">
+           <!-- <a class="navbar-brand " href="#"><img src="assets/images/logo.png" style="width:150px;"></a> -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+             <!-- <ul class="navbar-nav mr-auto ml-80">
+           
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><img src="assets/images/brandmine_1.png" style="width:123px;"></a>
+                </li>
+              </ul> -->
+              <form class="form-inline my-2 my-lg-0">
+               
+                <div class="form-group">
+                 
+                  <select class="form-control" id="sel1" name="select" [(ngModel)]="headerForm.selectedbrand">
+                    <option value ="0" selected>Brand Evangelist</option>
+                    <option value="1">Brand Manager</option>
+                    
+                  </select>
+                </div>
+              </form>
+              <form class="form-inline my-2 my-lg-0">
+               
+                <button class="btn btn-outline-warning my-2 my-sm-0 my_cls" type="submit" routerLink="/signin">Sign In</button>
+              </form>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+</header>
+  <!-- <header id="header">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="log_img">
+            <img class="signup-logo" src="/assets/images/logo.png">
+          </div>
+          <div class="drp_btn">
+            <div class="dropp">
+              <div class="form-group">
+      
+                <select class="form-control" id="sel1">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <button class="btn btn-warning">Sign</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header> -->
+  <!-- <header class="signup-header" id="header">
+    
+    <a href="/">
+      <img class="signup-logo" src="/assets/images/logo.svg" alt="Amazon Mechanical Turk">
+    </a>
+    <div class="dropp">
+      <div class="form-group">
+      
+        <select class="form-control" id="sel1">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+        </select>
+      </div>
+      <a class="btn omni-onclick" href="">Create</a>
+    </div>
+  </header> -->
+  <!-- contain main informative part of the site -->
+  <main id="main">
+    <!-- contain the main content of the page -->
+    <div class="visual-block">
+      <h2 class="signup-heading">Get Started with BrandMyVideo</h2>
+    </div>
+    <div class="flex-center">
+      <div class="signup-main">
+        <div class="signup-block">
+          <div class="signup-block-header">
+            <img src="/assets/images/Upload.svg">
+            <h2 class="text-align-center">Make Money</h2>
+          </div>
+          <p class="text-align-center">Upload branded videos and make money through your creative works.</p>
+          <a class="btn omni-onclick" (click)="signup('createevangeaccount')">Signup as a Brand Evangelist</a>
+        </div>
+        <div class="signup-separator">
+          <div>or</div>
+        </div>
+        <div class="signup-block">
+          <div class="signup-block-header">
+            <img src="/assets/images/Brand.svg">
+            <h2 class="text-align-center">Expand Brand Reach</h2>
+          </div>
+          <p class="text-align-center">Leverage social networks to reach your target audience and build your brand.</p>
+          <a class="btn omni-onclick" (click)="signup('createmanangeracc')">Signup as a Brand Manager</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- footer of the page -->
+  <div class="signup-footer-holder">
+    <footer id="footer">
+      <!-- footer navigation -->
+      <ul class="menu">
+          <li><a href="/">About</a></li>
+          <li><a href="/">Help</a></li>
+          <li><a href="/">Legal &amp; Licenses</a></li>
+        </ul>
+      <!-- copyright -->
+      <div class="copyright">
+        <p>© 2019-2020, <a href="/">Pixglo</a>, Inc. <span class="nowrap">All rights reserved.</span></p>
+      </div>
+    </footer>
+  </div>
+</div>

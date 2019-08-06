@@ -1,0 +1,139 @@
+
+
+<div class="a-section a-padding-medium auth-workflow">
+    <div class="a-section a-spacing-none auth-navbar">
+       <div class="a-section a-spacing-medium a-text-center">
+          <a class="a-link-nav-icon" tabindex="-1" href="">
+          <i class="a-icon a-icon-logo" role="img" aria-label=""></i>
+          </a>
+       </div>
+    </div>
+    <div id="authportal-center-section" class="a-section">
+       <div id="authportal-main-section" class="a-section">
+         <div *ngIf="invalidLogin" class="alert alert-danger">Invalid username and/or password.</div>
+          <div class="a-section auth-pagelet-container">
+             <div class="a-section a-spacing-base">
+                <div class="a-section">
+                   <form name="signIn" class="a-spacing-none fwcim-form"  #f="ngForm">
+            
+                      <div class="a-section">
+                         <div class="a-box">
+                            <div class="a-box-inner a-padding-extra-large">
+                               <h1 class="a-spacing-small">
+                                  Sign in
+                               </h1>
+                               <!-- optional subheading element -->
+                               <div class="a-row a-spacing-base">
+                                  <label for="ap_email" class="a-form-label">
+                                  Email (phone for mobile accounts)
+                                  </label>
+                                  <input type="email" maxlength="128" id="ap_email" name="email" [(ngModel)]="user.username" #Email_Address="ngModel" required tabindex="1" class="a-input-text a-span12 auth-autofocus auth-required-field">
+                                  <div id="auth-email-missing-alert" class="a-box a-alert-inline a-alert-inline-error auth-inlined-error-message a-spacing-top-mini" aria-live="assertive" role="alert">
+                                    <div *ngIf="Email_Address.errors && (Email_Address.dirty || Email_Address.touched)" class="error"><pre>{{Email_Address.errors.required}}</pre>
+                                       <div ng-if="Email_Address.errors.required">Please Enter username</div>
+                                       <div ng-if="Email_Address.errors.pattern">Please Enter proper username correctly</div>
+                                   </div>
+                                    <!-- <div class="a-box-inner a-alert-container">
+                                        <i class="a-icon a-icon-alert"></i>
+                                        <div class="a-alert-content">
+                                           Enter your email or mobile phone number
+                                        </div>
+                                     </div> -->
+                                  </div>
+                               </div>
+                               <input type="hidden" name="create" value="0">
+                               <div class="a-section a-spacing-large">
+                                  <div class="a-row">
+                                     <div class="a-column a-span5">
+                                        <label for="ap_password" class="a-form-label">
+                                        Password
+                                        </label>
+                                     </div>
+                                     <div class="a-column a-span7 a-text-right a-span-last">
+                                        <a id="auth-fpp-link-bottom" class="a-link-normal" tabindex="3" href="">
+                                        Forgot your password?
+                                        </a>
+                                     </div>
+                                  </div>
+                                  <input type="password" id="ap_password" name="password" [(ngModel)]="user.password" tabindex="2" class="a-input-text a-span12 auth-required-field" required>
+                                  <div id="auth-password-missing-alert" class="a-box a-alert-inline a-alert-inline-error auth-inlined-error-message a-spacing-top-mini" aria-live="assertive" role="alert">
+                                     <div class="a-box-inner a-alert-container">
+                                        <i class="a-icon a-icon-alert"></i>
+                                        <div class="a-alert-content">
+                                           Enter your password
+                                        </div>
+                                     </div>
+                                  </div>
+                               </div>
+                               <div class="a-section a-spacing-extra-large">
+                                  <span class="a-button a-button-span12 a-button-primary" id="a-autoid-0" ><span class="a-button-inner"><input id="signInSubmit" tabindex="5" class="a-button-input" type="button" aria-labelledby="a-autoid-0-announce"  (click)="login()" [disabled]="f.invalid"><span class="a-button-text" aria-hidden="true" id="a-autoid-0-announce">
+                                  Sign in
+                                  </span></span></span>
+                                  <div id="legalTextRow" class="a-row a-spacing-top-medium a-size-small">
+                                      By continuing, you agree to BrandMyVideo's <a href="">Conditions of Use</a> and <a href="">Privacy Notice</a>.
+                                    </div>
+                                  <div class="a-row a-spacing-top-medium">
+                                     <div class="a-section a-text-left">
+                                        <label for="auth-remember-me" class="a-form-label">
+                                           <div data-a-input-name="rememberMe" class="a-checkbox">
+                                        <label><input type="checkbox" name="rememberMe" value="true" tabindex="4" id="checkbox2" value="2"><i class="a-icon a-icon-checkbox"></i><span class="a-label a-checkbox-label">
+                                        Keep me signed in.
+                 
+                                        </span></label></div>
+                                        </label>
+                                     </div>
+                                  </div>
+                               </div>
+                               <div class="a-divider a-divider-break" style="margin-bottom:0px;">
+                                    <h5>(Or)</h5>
+                                 </div>
+                                 <div class="media_txt">
+                                    <span>Login with social media accounts</span>
+                                 </div>
+                                 <div class="social_btnss">
+                                    <button type="submit" class="fb_btn">Facebook</button>
+                                    <button type="submit" class="gm_btn">Google</button>
+                                 </div>
+                               <div class="a-divider a-divider-break">
+                                  <h5>New to BrandMyVideo?</h5>
+                               </div>
+                               <span id="auth-create-account-link" class="a-button a-button-span12 a-button-base"><span class="a-button-inner"><a id="createAccountSubmit" tabindex="6" routerLink="/signup" class="a-button-text" role="button">
+                                  Sign up for a BrandMyVideo Account
+                               </a></span></span>
+                            </div>
+                         </div>
+                      </div>
+                   </form>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+    <div id="right-2">
+    </div>
+    <div class="a-section a-spacing-top-extra-large auth-footer">
+       <div class="a-divider a-divider-section">
+          <div class="a-divider-inner"></div>
+       </div>
+       <div class="a-section a-spacing-small a-text-center a-size-mini">
+          <span class="auth-footer-seperator"></span>
+          <a class="a-link-normal" target="_blank" rel="noopener" href="">
+          Conditions of Use
+          </a>
+          <span class="auth-footer-seperator"></span>
+          <a class="a-link-normal" target="_blank" rel="noopener" href="">
+          Privacy Notice
+          </a>
+          <span class="auth-footer-seperator"></span>
+          <a class="a-link-normal" target="_blank" rel="noopener" href="/help">
+          Help
+          </a>
+          <span class="auth-footer-seperator"></span>
+       </div>
+       <div class="a-section a-spacing-none a-text-center">
+          <span class="a-size-mini a-color-secondary">
+          © 2019-2020, Pixglo.com, Inc.
+          </span>
+       </div>
+    </div>
+ </div>

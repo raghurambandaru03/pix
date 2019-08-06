@@ -1,0 +1,540 @@
+#wrapper {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+html, body, #wrapper {
+    height: 100%;
+}
+* {
+    max-height: 1000000px;
+}
+
+
+/*****header*******/
+#header {
+    position: relative;
+    display: table-header-group;
+    height: 1%;
+}
+.form-control{
+    font-size: 13px !important;
+}
+.ml-80 {
+    /* margin-left: 47%; */
+    margin: 0px auto;
+    padding-left:2%;
+}
+.signup-header {
+    text-align: center;
+    /* background: #6D6B6B; */
+    margin-bottom: 10px;
+}
+.my_cls{
+    padding: 6px 15px !important;
+    margin-left: 10px !important;
+}
+.nav-link{
+    padding: 0 !important;
+    padding-left: 45px !important;
+}
+.signup-logo {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    width: 260px;
+}
+img {
+    vertical-align: top;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+img {
+    border: 0;
+}
+#main {
+    display: table-cell;
+}
+.visual-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+.signup-heading {
+    text-align: center;
+    margin-bottom: 49px;
+    margin-top: 0px;
+}
+h1 {
+    font-weight: 300;
+    line-height: 1.5;
+    color: #F49404;
+}
+h1, .h1 {
+    font-size: 26px;
+}
+.nowrap {
+    white-space: nowrap;
+}
+.signup-footer-holder #footer:after {
+    display: none;
+}
+.clearfix:after, #footer:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.header-bottom .nav-drop #nav, ul:not([class]):not([id]), .second-nav, .breadcrumbs, .product .features-list, .pricing ul, .faqs .questions, .answers ul, .resources .resources-list, .legal-licenses .legal-list, #footer .menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.flex-center {
+    display: -webkit-flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+}
+.signup-main {
+    display: -webkit-flex;
+    display: -webkit-flex;
+    display: -webkit-flex;
+    display: -webkit-flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
+    -o-justify-content: space-around;
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
+    -o-justify-content: space-around;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-box-align: center;
+    -o-box-align: center;
+    box-align: center;
+    flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+}
+.signup-block {
+    display: -webkit-flex;
+    display: -webkit-flex;
+    display: -webkit-flex;
+    display: -webkit-flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-box-align: center;
+    -o-box-align: center;
+    box-align: center;
+    flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    width: 300px;
+    margin-bottom: 20px;
+}
+.signup-block-header {
+    display: -webkit-flex;
+    display: -webkit-flex;
+    display: -webkit-flex;
+    display: -webkit-flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-box-align: center;
+    -o-box-align: center;
+    box-align: center;
+    flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.signup-block-header img {
+    width: 30%;
+    margin-right: 15px;
+}
+.signup-block-header h2 {
+    margin: 0;
+}
+.text-align-center {
+    text-align: center;
+}
+h2 {
+    font-weight: 500;
+    line-height: 1.9;
+    color: #555;
+}
+h2, .h2 {
+    font-size: 21px;
+}
+p {
+    margin: 0 0 1em;
+}
+.btn {
+    -webkit-transition: opacity .3s ease-in-out;
+    transition: opacity .3s ease-in-out;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    padding: 3px 13px;
+    margin: 0;
+    cursor: pointer;
+  
+    background:#F49404;
+    border: 1px solid #987a2f;
+    border-radius: 3px;
+}
+.signup-separator {
+    line-height: 40px;
+    display: -webkit-flex;
+    display: -webkit-flex;
+    display: -webkit-flex;
+    display: -webkit-flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-box-align: center;
+    -o-box-align: center;
+    box-align: center;
+    flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.signup-separator:before, .signup-separator:after {
+    content: "";
+    width: 80px;
+    height: 1px;
+    border-top: 1px solid lightgrey;
+}
+.signup-separator div {
+    width: 50px;
+    text-align: center;
+    font-size: 14pt;
+    font-family: "AmazonEmber", "Helvetica Neue", "Helvetica", sans-serif;
+    margin-bottom: 3px;
+}
+.signup-footer-holder {
+    display: table-footer-group;
+    overflow: hidden;
+    height: 1%;
+}
+.signup-footer-holder #footer {
+    background-color: #FFF;
+    display: -webkit-flex;
+    display: -webkit-flex;
+    display: -webkit-flex;
+    display: -webkit-flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-box-align: center;
+    -o-box-align: center;
+    box-align: center;
+    flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    margin-top: 48px;
+}
+#footer {
+    background-color: #f1f1f1;
+    padding: 7px 15px 10px;
+    position: fixed !important;
+    bottom: 0px !important;
+    width: 100% !important;
+}
+#footer .menu {
+    padding-bottom: 6px;
+}
+.header-bottom .nav-drop #nav, ul:not([class]):not([id]), .second-nav, .breadcrumbs, .product .features-list, .pricing ul, .faqs .questions, .answers ul, .resources .resources-list, .legal-licenses .legal-list, #footer .menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#footer .menu li {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+}
+#footer .menu a {
+    -webkit-transition: color .3s ease-in-out;
+    transition: color .3s ease-in-out;
+    color: #767676;
+    font-size: 12px;
+    line-height: 1.3;
+}
+#footer .copyright {
+    font-size: 10px;
+    font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+    line-height: 1.1;
+    color: #999;
+}
+.signup-footer-holder #footer .copyright p {
+    text-align: center;
+}
+#footer .copyright p {
+    margin: 0;
+}
+@media (min-width: 1024px){
+#footer {
+    padding: 7px 25px 10px;
+    background: #e5e6e7 !important;
+}
+#footer .menu li {
+    margin-right: 22px;
+}
+}
+@media (min-width: 768px){
+    .signup-footer-holder #footer {
+        -webkit-flex-direction: row;
+        -moz-flex-direction: row;
+        -ms-flex-direction: row;
+        -o-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-direction: row;
+        -moz-flex-direction: row;
+        -ms-flex-direction: row;
+        -o-flex-direction: row;
+        flex-direction: row;
+        -webkit-justify-content: space-between;
+        -moz-justify-content: space-between;
+        -ms-justify-content: space-between;
+        -o-justify-content: space-between;
+        justify-content: space-between;
+        -webkit-justify-content: space-between;
+        -moz-justify-content: space-between;
+        -ms-justify-content: space-between;
+        -o-justify-content: space-between;
+        justify-content: space-between;
+    }
+
+.signup-main {
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    width: 50%;
+    max-width: 1000px;
+    min-width: 700px;
+}
+.signup-separator:before, .signup-separator:after {
+    height: 75px;
+    width: 0;
+    border-left: 1px solid lightgrey;
+    border-top: 0;
+}
+.signup-separator {
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    line-height: 60px;
+}
+.signup-block-header {
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: 0;
+}
+.signup-block-header img {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-right: 0;
+}
+.signup-block-header h2 {
+    margin-bottom: 0;
+}
+.signup-block p {
+    margin-bottom: 25px;
+}
+}
