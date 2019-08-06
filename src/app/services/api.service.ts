@@ -41,7 +41,7 @@ export class ApiService {
   }
 
   get(path: string, params: URLSearchParams = new URLSearchParams()): Observable<any> {
-    return this.http.get(`${environment.api_url}${path}`, {headers: this.setHeaders()});
+    return this.http.get(`${environment.api_url}${path}`);
   }
 
   put(path: string, body: Object = {}): Observable<any> {

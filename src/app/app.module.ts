@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { HttpClientModule, HttpClient, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from './shared/modules/material/material.module';
 // import {MatSelectModule} from '@angular/material/select';
@@ -19,6 +19,7 @@ import { AlertService } from './services/alert.service';
 import { AuthenticationService } from './services/authentication.service';
 import { ApiService } from './services/api.service';
 import { JwtService } from './services/jwt.service';
+import { AuthInterceptor } from './services/auth.interceptor';
 // import and register filepond file type validation plugin
 // import FilePondPluginFileValidateType from 'filepond-plugin-file-validate-type';
 // registerPlugin(FilePondPluginFileValidateType);
@@ -38,10 +39,6 @@ import { JwtService } from './services/jwt.service';
     FilePondModule,
     HttpModule,
     ReactiveFormsModule
-    
-    
-
-
   ],
   providers: [
     fakeBackendProvider,
@@ -51,7 +48,12 @@ import { JwtService } from './services/jwt.service';
     JwtService,
     AuthenticationService,
     BaseRequestOptions,
-    AuthService
+    AuthService,
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: AuthInterceptor,
+      multi: true,
+      }
   ],
   bootstrap: [AppComponent]
 })
