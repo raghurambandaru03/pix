@@ -28,17 +28,10 @@
                                   Email (phone for mobile accounts)
                                   </label>
                                   <input type="email" maxlength="128" id="ap_email" name="email" [(ngModel)]="user.username" #Email_Address="ngModel" required tabindex="1" class="a-input-text a-span12 auth-autofocus auth-required-field">
-                                  <div id="auth-email-missing-alert" class="a-box a-alert-inline a-alert-inline-error auth-inlined-error-message a-spacing-top-mini" aria-live="assertive" role="alert">
-                                    <div *ngIf="Email_Address.errors && (Email_Address.dirty || Email_Address.touched)" class="error"><pre>{{Email_Address.errors.required}}</pre>
-                                       <div ng-if="Email_Address.errors.required">Please Enter username</div>
-                                       <div ng-if="Email_Address.errors.pattern">Please Enter proper username correctly</div>
-                                   </div>
-                                    <!-- <div class="a-box-inner a-alert-container">
-                                        <i class="a-icon a-icon-alert"></i>
-                                        <div class="a-alert-content">
-                                           Enter your email or mobile phone number
-                                        </div>
-                                     </div> -->
+                                  <!-- <div id="auth-email-missing-alert" class="a-box a-alert-inline a-alert-inline-error auth-inlined-error-message a-spacing-top-mini" aria-live="assertive" role="alert"> -->
+                                    <div *ngIf="Email_Address.errors && (Email_Address.dirty || Email_Address.touched)" class="error a-alert-container">
+                                       <div *ngIf="Email_Address.errors.required">Please Enter username</div>
+                                       <div *ngIf="Email_Address.errors.pattern">Please Enter proper username correctly</div>
                                   </div>
                                </div>
                                <input type="hidden" name="create" value="0">
@@ -55,14 +48,18 @@
                                         </a>
                                      </div>
                                   </div>
-                                  <input type="password" id="ap_password" name="password" [(ngModel)]="user.password" tabindex="2" class="a-input-text a-span12 auth-required-field" required>
-                                  <div id="auth-password-missing-alert" class="a-box a-alert-inline a-alert-inline-error auth-inlined-error-message a-spacing-top-mini" aria-live="assertive" role="alert">
-                                     <div class="a-box-inner a-alert-container">
+                                  <input type="password" id="ap_password" name="password" [(ngModel)]="user.password" tabindex="2" class="a-input-text a-span12 auth-required-field" #password="ngModel" required>
+                                  <!-- <div id="auth-password-missing-alert" class="a-box a-alert-inline a-alert-inline-error auth-inlined-error-message a-spacing-top-mini" aria-live="assertive" role="alert"> -->
+                                     <!-- <div class="a-box-inner a-alert-container">
                                         <i class="a-icon a-icon-alert"></i>
                                         <div class="a-alert-content">
                                            Enter your password
                                         </div>
-                                     </div>
+                                     </div> -->
+                                     <div *ngIf="password.errors && (password.dirty || password.touched)" class="error a-alert-container">
+                                       <div *ngIf="password.errors.required">Please Enter Password</div>
+                                       <!-- <div ng-if="password.errors.pattern">Please Enter proper username correctly</div> -->
+                                   <!-- </div> -->
                                   </div>
                                </div>
                                <div class="a-section a-spacing-extra-large">
