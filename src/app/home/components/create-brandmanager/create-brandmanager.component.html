@@ -150,7 +150,7 @@
             Participation Agreement. Please see our Privacy Notice.</p>
         </div>
         <div style="text-align:center;">
-          <button type="button" class="btn omni-onclick" (click)="createAccount()" [disabled]="userform.invalid">Create Account</button>
+          <button type="button" class="btn omni-onclick" (click)="createAccount()" [disabled]="userform.invalid || !toppings.value">Create Account</button>
         </div>
       </div>
     </div>
