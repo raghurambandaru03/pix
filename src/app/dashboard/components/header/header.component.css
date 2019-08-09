@@ -110,7 +110,7 @@
   /* End search */
   
   .side-nav .categories > li {
-    padding: 17px 40px 17px 30px;
+    padding: 17px 15px 17px 15px;
     overflow: hidden;
     border-bottom: 1px solid rgba(255, 255, 255, 0.02);
     cursor: pointer;
@@ -369,7 +369,7 @@
     left: 0 !important;
   }
   .navbar-default {
-    background-color: #6f6486 !important;
+    background-color: #252636 !important;
     border: none !important;
     border-radius: 0 !important;
     margin: 0 !important
