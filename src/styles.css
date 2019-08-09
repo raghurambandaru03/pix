@@ -46,3 +46,9 @@ textarea.ng-touched.ng-invalid {
   color: #ff0000;
   font-size: 12px;
 }
+.a-alert-container div {
+    color: red;
+}
+input[type="button"]:disabled {
+    cursor: not-allowed;
+}
